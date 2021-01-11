@@ -1,0 +1,198 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    
+}
+section{
+    padding: 70px 0;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+#portfolio, #contact {
+    background: #f5f5f5;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    
+}
+header{
+    background-color:  lightgray;
+    
+}
+.nav{
+    overflow: hidden;
+    margin-bottom: 100px;
+
+}
+.navbar{
+    padding: 15px 0;
+    float: right;
+    
+}
+.navbar a{
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    padding: 15px 16px;
+    text-decoration: none;
+    float: left;
+    font-weight: 600;
+}
+
+
+
+.half-width{
+    width: 40%;
+    float: left;   
+}
+
+.half{
+    margin-left: 15%;
+}
+.hero-title{
+    font-size: 52px;
+}
+.highlight-1{
+    color: #363958;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    
+}
+
+.highlight-2{
+    font-size: 40px;
+    color: #FF8367;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.button-link{
+    color: white;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 15px 35px;
+    background-image: linear-gradient(40deg, rgb(255, 77, 71), #FF8367);
+}
+.first-section-p{
+    margin: 40px 0;
+}
+
+.half-width img{
+    width: 100%;
+}
+
+.highlight-4{
+    font-size: 30px;
+    color: #363958;
+    text-transform: uppercase;
+}
+.highlight-3{
+    font-size: 30px;
+    color: #FF8367;
+    text-transform: uppercase;
+}
+.project-header{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.box{
+    width: 25%;
+    float: left;
+    box-shadow: 7px 7px 7px 7px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    padding: 2%;
+    text-align: justify;
+    background: #fff;
+}
+
+.box-2, .box-3{
+    margin-left: 5%;
+}
+.box img{
+    width: 100%;
+}
+
+.query{
+    width: 60%;
+    margin: 100px auto ;
+    min-height: 220px;
+    text-align:center;
+    background-image: url("images/bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.query h1{
+    text-transform: uppercase;
+    margin-top: 70px;
+    color: white;
+    width: 40%;
+    text-align: center;
+    float: left;
+}
+.link-bottom{
+    margin:60px 80px 0 0;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    color: white;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-image: linear-gradient(40deg, rgb(255, 77, 71), #FF8367);
+}
+
+.massage-area{
+    background:whitesmoke;
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+input[type="text"], [type="email"], textarea{
+    width: 85%;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.link-footer{
+    margin-left: 15px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-image: linear-gradient(40deg, rgb(255, 77, 71), #FF8367);
+}
+.link-footer a{
+    color: white;
+    font-size: 15px;
+}
+
+.contact-area{
+    width: 45%;
+    min-height: 430px;
+    margin-left: 50px;
+    padding: 20px 0 0 50px;
+    background: whitesmoke;
+    border-radius: 5px;
+}
+
+footer{
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+    font-weight: 600;
+    background-color: lightgray;
+}
