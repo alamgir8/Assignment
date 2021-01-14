@@ -118,11 +118,13 @@ form input[type="text"]{
 
 @media (max-width: 768px){
     .custom-flex{
-        display: block;
-        text-align: center;
         align-items: center;
         justify-content: center;
-
+        display: flex;
+        border-radius: 15px;
+        margin: 10px 0;
+        padding: 10px 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     }
     .custom-flex img{
         width: 50%;
@@ -134,9 +136,9 @@ form input[type="text"]{
 
 /*Subscribe form*/
 
-#subscribe{
-    background-color: whitesmoke;
-    padding: 150px 0;
+#subscribe {
+    background-color: #fabe6e;
+    padding: 100px 0;
 }
 .custom-button{
     text-align: center;
@@ -154,17 +156,11 @@ form input[type="text"]{
    border: 0;
    margin: 0 0 0 10px;
    border-radius: 5px;
-   padding: 12px 25px;
+   padding: 10px 25px;
    background-color:   #000855;
    color: white;
 }
-  input[type="email"]{
-      padding: 12px  100px;
-      border-radius: 10px;
-      border: .5px solid #ff3f6f;
-      outline-style: none;
-      
-  }
+  
 
   
   
@@ -172,10 +168,11 @@ form input[type="text"]{
 
  
 /*footer css*/
-footer{
+#footer{
     font-family: 'Roboto', sans-serif;
     padding: 100px;
     font-size: 16px;
+    background-color: lightgray;
 }
 .highlight{
     color: #000855;
