@@ -1,0 +1,60 @@
+body{
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    
+}
+.button{
+    background-color: #A4BC46;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    
+}
+
+.subscribe-button{
+    border-radius: 5px;
+
+}
+form input[type="text"]{
+    padding: 10px 20px;
+}
+
+section{
+    padding: 50px;
+}
+.cart-image{
+    width: 25%;
+}
+
+.logo-image{
+    width: 50%;
+}
+
+.highlight-1{
+    font-family: 'Oswald', sans-serif;
+    
+    word-spacing: .5px;
+    color:#FABE4C;
+}
+
+.highlight-2{
+    font-family: 'Oswald', sans-serif;
+  
+    color: #282b50;
+}
+header, #subscribe{
+    background-color: #FFFBF0;
+} 
+header{
+    padding: 40px 0;
+}
+
+.bottom-navbar{
+    font-family: 'Lobster Two', cursive;
+    font-weight: 300;
+}
+
+
+
