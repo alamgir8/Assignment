@@ -104,9 +104,9 @@ form input[type="text"]{
     justify-content: center;
     display: flex;
     border-radius: 15px;
-    margin: 10px 50px 10px 0;
+    margin: 15px 0;
     padding: 10px 20px;
-    box-shadow: 7px 7px 7px 7px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 
@@ -118,9 +118,10 @@ form input[type="text"]{
 
 @media (max-width: 768px){
     .custom-flex{
+        text-align: center;
         align-items: center;
         justify-content: center;
-        display: flex;
+        display:block;
         border-radius: 15px;
         margin: 10px 0;
         padding: 10px 20px;
