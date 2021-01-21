@@ -1,26 +1,28 @@
 
 //Calculating kilometer to meter by function
 
+
 function kilometerToMeter(kilometer) {
     if (kilometer <= -1) {
         return 'distance cannot be negative';
     }
-    var meter = kilometer * 1000;
+    var meter = kilometer * 1000; //as we know 1km = 1000m
     return meter;
-    
 }
 
-console.log(kilometerToMeter(10));
+console.log(kilometerToMeter(10));     //As a exmple for 10 kilometer;
 
 
 
 
 
-// Buget calculatin by function
+
+
+// Buget calculatin by function. (In this function, you can't use negative quantity for any items.)
 
 function budgetCalculator(watch, mobile, laptop) {
-    if (watch <= -1) {
-        return " you can't inter negative quantity";
+    if (watch <= -1 || mobile <= -1 || laptop <= -1) {
+        return "you can't inter negative quantity";
     }
     var watchPrice = 50 * watch;
     var mobilePrice = 100 * mobile;
@@ -28,9 +30,13 @@ function budgetCalculator(watch, mobile, laptop) {
     var totalBudget = watchPrice + mobilePrice +laptopPrice;
 
     return totalBudget;
-    
 }
-console.log(budgetCalculator(5, 2, 1));
+
+console.log(budgetCalculator(5, 2, 1));      //As a exmple 5 watch, 2 mobile and 1 laptop.
+
+
+
+
 
 
 
@@ -47,7 +53,6 @@ function hotelCost(day) {
             var remainingDay = day - 10;
             var tenToTwentyDaysCost = remainingDay * 80;
             hotelCost = tenDaysCost + tenToTwentyDaysCost;
-            
         }
     else{
         var tenDaysCost = 10 * 100;
@@ -59,23 +64,25 @@ function hotelCost(day) {
     return hotelCost;
 }
 
-console.log(hotelCost(19));
+console.log(hotelCost(9));     //As a exmple of 9 days cost.
 
 
 
-//Findout big friend name by function
+
+
+
+
+//Find out big friend name by function
 
 function megaFriend(name) {
     var megaFriend = ' ';
-    for (let i = 0; i < name.length; i++) {
+    for (var i = 0; i < name.length; i++) {
        if (megaFriend.length < name[i].length ) {
            megaFriend = name[i];
-           
-       }
-        
+       }  
     }
+
     return megaFriend;
 }
-console.log(megaFriend(['RaselMiyaRipon','Hanif', 'Aminul', 'Alamin', 'Salauddin', 'Sharfuddin']));
-console.log(megaFriend(['Rasel','Hanif', 'Aminul', 'AlaminHosen', 'Salauddin', 'Sharfuddin']));
-console.log(megaFriend(['Rasel','Hanif', 'Aminul', 'Alamin', 'Salauddin', 'Sharfuddin']));
+
+console.log(megaFriend(['RaselMiyaRipon','Hanif', 'Aminul', 'Alamin', 'Salauddin', 'Sharfuddin']));     //As a exmple big friend name.
