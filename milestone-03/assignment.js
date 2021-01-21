@@ -1,8 +1,8 @@
-//github link:  https://github.com/alamgir8/Assignment/tree/main/milestone-03
+//Github link:  https://github.com/alamgir8/Assignment/tree/main/milestone-03
 
 
 
-//Calculating kilometer to meter by function
+//Calculating kilometer to the meter by function
 
 
 function kilometerToMeter(kilometer) {
@@ -21,7 +21,7 @@ console.log(kilometerToMeter(10));     //As a exmple for 10 kilometer;
 
 
 
-// Buget calculatin by function. (In this function, you can't use negative quantity for any items.)
+// Budget calculation by function. (In this function, you can't use negative quantity for any items.)
 
 function budgetCalculator(watch, mobile, laptop) {
     if (watch <= -1 || mobile <= -1 || laptop <= -1) {
