@@ -47,6 +47,10 @@ console.log(budgetCalculator(5, 2, 1));      //As a exmple 5 watch, 2 mobile and
 
 function hotelCost(day) {
     var hotelCost = 0;
+    if (day <= -1) {
+        return "you can't inter negative day for hotel cost";
+        
+    }
     if (day <= 10) {
         hotelCost = day * 100;
         
@@ -67,7 +71,7 @@ function hotelCost(day) {
     return hotelCost;
 }
 
-console.log(hotelCost(9));     //As a exmple of 9 days cost.
+console.log(hotelCost(-9));     //As a exmple of 9 days cost.
 
 
 
