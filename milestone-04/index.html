@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon -->
     <link rel="icon" href="images/icon-1.png"  sizes="16x16">
     <title>Flight Booking</title>
     <!-- Fonts -->
@@ -30,87 +31,89 @@
     </header>
 
     <!-------Booking Section------->
-    <main class="main-content container">
-        <div class="booking-form" id="ticket-area">
-            <h3>Booking Flights</h3>
-            <div class="input-group">
-                <label for="">Flying From</label>
-                <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
-            </div>
-            <div class="input-group">
-                <label for="">Flying To</label>
-                <input class="inp-style" type="text" name="" placeholder="New York, United States">
-            </div>
-            <div class="inputs">
+    <section class="main-content container">
+        <form action="confirmation.html" method="GET" >
+            <div class="booking-form" id="ticket-area">
+                <h3>Booking Flights</h3>
                 <div class="input-group">
-                    <label" for="">Departure</label>
-                    <input class="inp-style" type="date" name="">
+                    <label for="">Flying From</label>
+                    <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
                 </div>
                 <div class="input-group">
-                    <label for="">Return</label>
-                    <input class="inp-style" type="date" name="">
+                    <label for="">Flying To</label>
+                    <input class="inp-style" type="text" name="" placeholder="New York, United States">
                 </div>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label" for="">Departure</label>
+                        <input class="inp-style" type="date" name="">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Return</label>
+                        <input class="inp-style" type="date" name="">
+                    </div>
+                </div>
+    
+                <!--------firstClass ticket section start-------->
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">First Class ($150)</label>
+                        <input id="firstClassPrice" class="inp-style inp-width" type="number" name="" value="0" >
+                    </div>
+                    <div class="plus-minus-btn"> 
+                        <button onclick="totalPrice(false, 'firstClass')" type="button" class="btn btn-danger"> - </button>
+                        <button onclick="totalPrice(true, 'firstClass')" type="button" class="btn btn-primary" > + </button>
+                    </div>
+                </div>
+                <!--------firstClass ticket section end-------->
+    
+                <!--------economyClass ticket section start-------->
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">Economy Class ($100)</label>
+                        <input id="economyClassPrice"  class="inp-style inp-width" type="number" name="" value="0">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <button onclick="totalPrice(false, 'economyClass')" type="button" class="btn btn-danger"> - </button>
+                        <button onclick="totalPrice(true, 'economyClass')" type="button" class="btn btn-primary"> + </button> 
+                    </div>
+                </div>
+                <!--------economyClass ticket section end-------->
+    
+    
+                <!--------subtotal and total value section start-------->
+                <div class="calculations">
+                    <div class="amount">
+                        <div class="left">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="right">
+                            <p>$ <span id="sub-total">000</span> </p>
+                        </div>
+                    </div>
+    
+                    <div class="amount">
+                        <div class="left">
+                            <p>Charge 10% VAT</p>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="tax">00</span></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="right">
+                            <p>$ <span id="total-price">000</span></p>
+                        </div>
+                    </div>
+                </div>
+                 <!--------subtotal and total value section end-------->
+                <button class="btn-style" >Book Now</button>
             </div>
-
-            <!--------firstClass ticket section start-------->
-            <div class="input-group f-class">
-                <div>
-                    <label for="">First Class ($150)</label>
-                    <input id="firstClassPrice" class="inp-style inp-width" type="number" name="" value="0" >
-                </div>
-                <div class="plus-minus-btn"> 
-                    <button onclick="totalPrice(false, 'firstClass')" type="button" class="btn btn-danger"> - </button>
-                    <button onclick="totalPrice(true, 'firstClass')" type="button" class="btn btn-primary" > + </button>
-                </div>
-            </div>
-            <!--------firstClass ticket section end-------->
-
-            <!--------economyClass ticket section start-------->
-            <div class="input-group f-class">
-                <div>
-                    <label for="">Economy Class ($100)</label>
-                    <input id="economyClassPrice"  class="inp-style inp-width" type="number" name="" value="0">
-                </div>
-                <div class="plus-minus-btn">
-                    <button onclick="totalPrice(false, 'economyClass')" type="button" class="btn btn-danger"> - </button>
-                    <button onclick="totalPrice(true, 'economyClass')" type="button" class="btn btn-primary"> + </button> 
-                </div>
-            </div>
-            <!--------economyClass ticket section end-------->
-
-
-            <!--------subtotal and total value section start-------->
-            <div class="calculations">
-                <div class="amount">
-                    <div class="left">
-                        <p>Subtotal</p>
-                    </div>
-                    <div class="right">
-                        <p>$ <span id="sub-total">000</span> </p>
-                    </div>
-                </div>
-
-                <div class="amount">
-                    <div class="left">
-                        <p>Charge 10% VAT</p>
-                    </div>
-                    <div class="right">
-                        <p>$<span id="tax">00</span></p>
-                    </div>
-                </div>
-                <hr>
-                <div class="amount">
-                    <div class="left">
-                        <h4>Total</h4>
-                    </div>
-                    <div class="right">
-                        <p>$ <span id="total-price">000</span></p>
-                    </div>
-                </div>
-            </div>
-             <!--------subtotal and total value section end-------->
-            <button class="btn-style" onclick="window.print()" >Book Now</button>
-        </div>
+        </form>
 
         <div class="booking-content">
             <h1>discover <br> around the world</h1>
