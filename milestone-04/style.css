@@ -82,7 +82,10 @@ nav ul li a:hover, a.active{
 }
 .ticket-form{
     font-size: 15px;
-    margin-top: 10px;
+    margin-top: 20px;
+}
+.return{
+    margin-left: 5px;
 }
 .f-class{
     display: flex;
@@ -102,16 +105,14 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 /* ===ticket input area & plus minus section */
-.inp-width{
-    min-width: 350px;
-}
+
 .plus-minus-btn{
      
-    margin-top: 25px;
+    margin-top: 40px;
     word-spacing: 10px;
 }
 .plus-minus-btn button{
-    font-size: 20px;
+    font-size: 18px;
     
 }
 .booking-form  .calculations{
@@ -121,7 +122,7 @@ input[type=number] {
     font-weight: 500;
     margin: 0;
 }
-.booking-form input{
+.inp-style{
     width: 100%;
     display: block;
     padding: 10px;
@@ -129,7 +130,7 @@ input[type=number] {
     border: none;
     background: #F3F5FF;
     border-radius: 4px;
-    margin: 5px 0;
+  
 }
 .booking-form .inputs{
     display: grid;
@@ -141,7 +142,7 @@ input[type=number] {
 
 .booking-content{
     color: #fff;
-    width: 90%;
+    width: 100%;
     
 }
 .booking-content h1{

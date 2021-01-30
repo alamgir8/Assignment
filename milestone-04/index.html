@@ -41,81 +41,91 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
             </div>
        
-        <div class="ticket-area mt-5 mb-3">
+        <div class="ticket-area mt-5 mb-5">
             <form name="myForm" action="confirmation.html" onsubmit="return validateForm()" method="GET">
                 <div class="booking-form " id="ticket-area">
                     <h4>Booking Flights</h4>
     
                     <!-- flying from selection area -->
-                 <label for="" class="mt-1 ticket-form">Flying From </label>
-                 <div class="mt-1" >
-                    <select name="flyingFrom" class=" inputs form-control" id="id_flying_from">
-                         <option value="DAC">DAC - Dhaka</option>
-                         <option value="AMD">AMD - Ahmedabad</option> 
-                         <option value="AOR">AOR - Alor Setar</option> 
-                         <option value="ATQ">ATQ - Amritsar</option> 
-                         <option value="AVV">AVV - Melbourne - Avalon</option> 
-                         <option value="BLR">BLR - Bengaluru</option> 
-                         <option value="BNE">BNE - Brisbane</option> 
-                         <option value="BOM">BOM - Mumbai</option>
-                         <option value="CCU">CCU - Kolkata</option>
-                         <option value="CGK">CGK - Jakarta</option>
-                         <option value="CMB">CMB - Colombo</option>
-                         <option value="COK">COK - Kochi</option> 
-                         <option value="DEL">DEL - New Delhi</option>
-                         <option value="HKG">HKG - Hong Kong</option>
-                         <option value="HND">HND - Tokyo - Haneda</option> 
-                         <option value="HNL">HNL - Honolulu</option> 
-                         <option value="HYD">HYD - Hyderabad</option> 
-                         <option value="ICN">ICN - Seoul - Incheon</option>
-                         <option value="IDR">IDR - Indore</option> 
-                         <option value="KUL">KUL - Kuala Lumpur</option>
-                        
-                    </select>
-                </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <label for="" class="mt-1 ticket-form">Flying From </label>
+                            <div class="mt-1" >
+                               <select name="flyingFrom" class=" inputs form-control" id="id_flying_from">
+                                    <option value="DAC">DAC - Dhaka</option>
+                                    <option value="AMD">AMD - Ahmedabad</option> 
+                                    <option value="AOR">AOR - Alor Setar</option> 
+                                    <option value="ATQ">ATQ - Amritsar</option> 
+                                    <option value="AVV">AVV - Melbourne - Avalon</option> 
+                                    <option value="BLR">BLR - Bengaluru</option> 
+                                    <option value="BNE">BNE - Brisbane</option> 
+                                    <option value="BOM">BOM - Mumbai</option>
+                                    <option value="CCU">CCU - Kolkata</option>
+                                    <option value="CGK">CGK - Jakarta</option>
+                                    <option value="CMB">CMB - Colombo</option>
+                                    <option value="COK">COK - Kochi</option> 
+                                    <option value="DEL">DEL - New Delhi</option>
+                                    <option value="HKG">HKG - Hong Kong</option>
+                                    <option value="HND">HND - Tokyo - Haneda</option> 
+                                    <option value="HNL">HNL - Honolulu</option> 
+                                    <option value="HYD">HYD - Hyderabad</option> 
+                                    <option value="ICN">ICN - Seoul - Incheon</option>
+                                    <option value="IDR">IDR - Indore</option> 
+                                    <option value="KUL">KUL - Kuala Lumpur</option>
+                                   
+                               </select>
+                           </div>
+                        </div>
+
+                         <!-- flying destination selection area -->
+                        <div class="col">
+                            <label for="" class="mt-1 ticket-form">Flying to </label>
+                            <div class="mt-1"> 
+                                <select name=" flyingTo" class="inputs form-control" id="id_flying_from">
+                                    <option value="CCU">CCU - Kolkata</option>
+                                    <option value="CGK">CGK - Jakarta</option>
+                                    <option value="CMB">CMB - Colombo</option>
+                                    <option value="COK">COK - Kochi</option> 
+                                    <option value="DEL">DEL - New Delhi</option>
+                                    <option value="HKG">HKG - Hong Kong</option>
+                                    <option value="HND">HND - Tokyo - Haneda</option> 
+                                    <option value="HNL">HNL - Honolulu</option> 
+                                    <option value="HYD">HYD - Hyderabad</option> 
+                                    <option value="ICN">ICN - Seoul - Incheon</option>
+                                    <option value="IDR">IDR - Indore</option> 
+                                    <option value="KUL">KUL - Kuala Lumpur</option>
+                                    <option value="AMD">AMD - Ahmedabad</option> 
+                                    <option value="AOR">AOR - Alor Setar</option> 
+                                    <option value="ATQ">ATQ - Amritsar</option> 
+                                    <option value="AVV">AVV - Melbourne - Avalon</option> 
+                                    <option value="BLR">BLR - Bengaluru</option> 
+                                    <option value="BNE">BNE - Brisbane</option> 
+                                    <option value="BOM">BOM - Mumbai</option>
+                                </select>
+                           </div>
+                        </div>
+                      </div>
+                 
                    
-                    <!-- flying destination selection area -->
-                <label for="" class="mt-2 ticket-form">Flying to </label>
-                <div class="mt-1"> 
-                    <select name=" flyingTo" class="inputs form-control" id="id_flying_from">
-                        <option value="CCU">CCU - Kolkata</option>
-                        <option value="CGK">CGK - Jakarta</option>
-                        <option value="CMB">CMB - Colombo</option>
-                        <option value="COK">COK - Kochi</option> 
-                        <option value="DEL">DEL - New Delhi</option>
-                        <option value="HKG">HKG - Hong Kong</option>
-                        <option value="HND">HND - Tokyo - Haneda</option> 
-                        <option value="HNL">HNL - Honolulu</option> 
-                        <option value="HYD">HYD - Hyderabad</option> 
-                        <option value="ICN">ICN - Seoul - Incheon</option>
-                        <option value="IDR">IDR - Indore</option> 
-                        <option value="KUL">KUL - Kuala Lumpur</option>
-                        <option value="AMD">AMD - Ahmedabad</option> 
-                        <option value="AOR">AOR - Alor Setar</option> 
-                        <option value="ATQ">ATQ - Amritsar</option> 
-                        <option value="AVV">AVV - Melbourne - Avalon</option> 
-                        <option value="BLR">BLR - Bengaluru</option> 
-                        <option value="BNE">BNE - Brisbane</option> 
-                        <option value="BOM">BOM - Mumbai</option>
-                    </select>
-               </div>
+                   
+                
            
                     <div class="inputs">
-                        <div class="input-group">
+                        <div class="">
                             <label for="" class="ticket-form">Departure</label>
                             <input class="inp-style" type="date" name="departure">
                         </div>
-                        <div class="input-group">
+                        <div class="return">
                             <label for="" class="ticket-form">Return</label>
                             <input class="inp-style" type="date" name="return">
                         </div>
                     </div>
         
                     <!--------firstClass ticket section start-------->
-                    <div class=" input-group f-class">
+                    <div class="f-class">
                         <div>
                             <label for="" class="ticket-form">First Class ($150)</label>
-                            <input id="firstClassPrice" class="inp-style inp-width" type="number" name="firstClassTicket" value="0" required>
+                            <input id="firstClassPrice" class="form-control" type="number" name="firstClassTicket" value="0" required>
                         </div>
                         <div class="plus-minus-btn"> 
                             <button onclick="totalPrice(false, 'firstClass')" type="button" class="btn btn-danger"> - </button>
@@ -125,10 +135,10 @@
                     <!--------firstClass ticket section end-------->
         
                     <!--------economyClass ticket section start-------->
-                    <div class="input-group f-class">
+                    <div class="f-class">
                         <div>
                             <label for="" class="ticket-form">Economy Class ($100)</label>
-                            <input id="economyClassPrice"  class="inp-style inp-width" type="number" name="economyClassTicket" value="0" required>
+                            <input id="economyClassPrice"  class="form-control" type="number" name="economyClassTicket" value="0" required>
                         </div>
                         <div class="plus-minus-btn">
                             <button onclick="totalPrice(false, 'economyClass')" type="button" class="btn btn-danger"> - </button>
