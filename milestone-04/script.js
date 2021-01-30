@@ -57,10 +57,9 @@ function numberOfTicket(ticketName) {
 function validateForm() {
             let Departure = document.forms["myForm"]["departure"].value;
             let Return = document.forms["myForm"]["return"].value;
-            let First_Class_Ticket = document.forms["myForm"]["firstClassTicket"].value;
-            let economy_Class_Ticket = document.forms["myForm"]["economyClassTicket"].value;
-            if (Departure == "" || Return == "" || First_Class_Ticket <1 || economy_Class_Ticket <1) {
-              alert("All Input area must be filled with valid information");
+            let First_Class_Ticket = document.forms["myForm"]["firstClassTicket"].value;   //one firstClass ticket must be taken
+            if (Departure == "" || Return == "" || First_Class_Ticket <1 ) {
+              alert("Please fill all input area with valid information");
               return false;
             }
           }

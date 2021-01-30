@@ -7,9 +7,10 @@
     list-style-type: none;
 }
 .container{
-    width: 1200px;
+    width: 1000px;
     max-width: 85%;
     margin: 0 auto;
+   
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -33,18 +34,21 @@ nav{
     height: 50px;
     width: 100%;
     padding: 20px 0;
+   
 }
 
 nav ul{
     display: flex;
     justify-content: flex-end;
     margin: 0px 6px;
+    font-size: 15px;
 }
 nav ul li a{
     color: #fff;
     padding: 10px;
     text-transform: uppercase;
     text-decoration: none;
+    
 }
 nav ul li a:hover, a.active{
     background-color: #3352F2;
@@ -55,18 +59,30 @@ nav ul li a:hover, a.active{
 
 /* =====style for ticket booking section====== */
 .booking-form{
+    margin: 0;
     background-color: #fff;
     border: 1px solid #ddd;
-    padding: 25px;
+    padding: 15px 25px;
     border-radius: 5px;
     float: left;
 }
-.booking-form h3{
-    margin: 10px 0px;
+.form{
+    font-size: 14px;
+}
+.booking-form h4{
+    
+    margin: 5px 0px;
     text-align: center;
 }
-.booking-form  .input-group{
-    margin: 10px 0;
+
+
+.ticket-area{
+    font-size: 14px;
+  
+}
+.ticket-form{
+    font-size: 15px;
+    margin-top: 10px;
 }
 .f-class{
     display: flex;
@@ -87,7 +103,7 @@ input[type=number] {
 }
 /* ===ticket input area & plus minus section */
 .inp-width{
-    min-width: 290px;
+    min-width: 350px;
 }
 .plus-minus-btn{
      
@@ -103,7 +119,7 @@ input[type=number] {
 }
 .booking-form  .calculations p{
     font-weight: 500;
-    margin-bottom: 10px;
+    margin: 0;
 }
 .booking-form input{
     width: 100%;
@@ -113,23 +129,27 @@ input[type=number] {
     border: none;
     background: #F3F5FF;
     border-radius: 4px;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 .booking-form .inputs{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    font-size: 14px;
 }
+
+
 .booking-content{
     color: #fff;
-    width: 80%;
+    width: 90%;
+    
 }
 .booking-content h1{
     font-size: 70px;
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 /* ===booking button==== */
 .btn-style{

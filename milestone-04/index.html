@@ -31,141 +31,149 @@
     </header>
 
     <!-------Booking Section------->
-    <section class="main-content container">
-        <form name="myForm" action="confirmation.html" onsubmit="return validateForm()" method="GET">
-            <div class="booking-form" id="ticket-area">
-                <h3>Booking Flights</h3>
-
-                <!-- flying from selection area -->
-             <label for="" class="mt-3">Flying From </label>
-             <div class="mt-2" >
-                <select name="flyingFrom" class="select1 form-control" id="id_flying_from">
-                     <option value="DAC">DAC - Dhaka</option>
-                     <option value="AMD">AMD - Ahmedabad</option> 
-                     <option value="AOR">AOR - Alor Setar</option> 
-                     <option value="ATQ">ATQ - Amritsar</option> 
-                     <option value="AVV">AVV - Melbourne - Avalon</option> 
-                     <option value="BLR">BLR - Bengaluru</option> 
-                     <option value="BNE">BNE - Brisbane</option> 
-                     <option value="BOM">BOM - Mumbai</option>
-                     <option value="CCU">CCU - Kolkata</option>
-                     <option value="CGK">CGK - Jakarta</option>
-                     <option value="CMB">CMB - Colombo</option>
-                     <option value="COK">COK - Kochi</option> 
-                     <option value="DEL">DEL - New Delhi</option>
-                     <option value="HKG">HKG - Hong Kong</option>
-                     <option value="HND">HND - Tokyo - Haneda</option> 
-                     <option value="HNL">HNL - Honolulu</option> 
-                     <option value="HYD">HYD - Hyderabad</option> 
-                     <option value="ICN">ICN - Seoul - Incheon</option>
-                     <option value="IDR">IDR - Indore</option> 
-                     <option value="KUL">KUL - Kuala Lumpur</option>
-                    
-                </select>
-            </div>
-               
-                <!-- flying destination selection area -->
-            <label for="" class="mt-3">Flying to </label>
-            <div class="mt-2"> 
-                <select name=" flyingTo" class="select2 form-control" id="id_flying_from">
-                    <option value="CCU">CCU - Kolkata</option>
-                    <option value="CGK">CGK - Jakarta</option>
-                    <option value="CMB">CMB - Colombo</option>
-                    <option value="COK">COK - Kochi</option> 
-                    <option value="DEL">DEL - New Delhi</option>
-                    <option value="HKG">HKG - Hong Kong</option>
-                    <option value="HND">HND - Tokyo - Haneda</option> 
-                    <option value="HNL">HNL - Honolulu</option> 
-                    <option value="HYD">HYD - Hyderabad</option> 
-                    <option value="ICN">ICN - Seoul - Incheon</option>
-                    <option value="IDR">IDR - Indore</option> 
-                    <option value="KUL">KUL - Kuala Lumpur</option>
-                    <option value="AMD">AMD - Ahmedabad</option> 
-                    <option value="AOR">AOR - Alor Setar</option> 
-                    <option value="ATQ">ATQ - Amritsar</option> 
-                    <option value="AVV">AVV - Melbourne - Avalon</option> 
-                    <option value="BLR">BLR - Bengaluru</option> 
-                    <option value="BNE">BNE - Brisbane</option> 
-                    <option value="BOM">BOM - Mumbai</option>
-                </select>
-           </div>
+   
        
-                <div class="inputs">
-                    <div class="input-group">
-                        <label" for="">Departure</label>
-                        <input class="inp-style" type="date" name="departure">
-                    </div>
-                    <div class="input-group">
-                        <label for="">Return</label>
-                        <input class="inp-style" type="date" name="return">
-                    </div>
-                </div>
-    
-                <!--------firstClass ticket section start-------->
-                <div class=" input-group f-class">
-                    <div>
-                        <label for="">First Class ($150)</label>
-                        <input id="firstClassPrice" class="inp-style inp-width" type="number" name="firstClassTicket" value="0" required>
-                    </div>
-                    <div class="plus-minus-btn"> 
-                        <button onclick="totalPrice(false, 'firstClass')" type="button" class="btn btn-danger"> - </button>
-                        <button onclick="totalPrice(true, 'firstClass')" type="button" class="btn btn-primary" > + </button>
-                    </div>
-                </div>
-                <!--------firstClass ticket section end-------->
-    
-                <!--------economyClass ticket section start-------->
-                <div class="input-group f-class">
-                    <div>
-                        <label for="">Economy Class ($100)</label>
-                        <input id="economyClassPrice"  class="inp-style inp-width" type="number" name="economyClassTicket" value="0" required>
-                    </div>
-                    <div class="plus-minus-btn">
-                        <button onclick="totalPrice(false, 'economyClass')" type="button" class="btn btn-danger"> - </button>
-                        <button onclick="totalPrice(true, 'economyClass')" type="button" class="btn btn-primary"> + </button> 
-                    </div>
-                </div>
-                <!--------economyClass ticket section end-------->
-    
-    
-                <!--------subtotal and total value section start-------->
-                <div class="calculations">
-                    <div class="amount">
-                        <div class="left">
-                            <p>Subtotal</p>
-                        </div>
-                        <div class="right">
-                            <p>$ <span id="sub-total">000</span> </p>
-                        </div>
-                    </div>
-    
-                    <div class="amount">
-                        <div class="left">
-                            <p>Charge 10% VAT</p>
-                        </div>
-                        <div class="right">
-                            <p>$<span id="tax">00</span></p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="amount">
-                        <div class="left">
-                            <h4>Total</h4>
-                        </div>
-                        <div class="right">
-                            <p>$ <span id="total-price">000</span></p>
-                        </div>
-                    </div>
-                </div>
-                 <!--------subtotal and total value section end-------->
-                <button class="btn-style"  >Book Now</button>
+   
+    <section class="main-content container">
+        
+            <div class="booking-content">
+                <h1>discover <br> around the world</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
             </div>
-        </form>
-
-        <div class="booking-content">
-            <h1>discover <br> around the world</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
+       
+        <div class="ticket-area mt-5 mb-3">
+            <form name="myForm" action="confirmation.html" onsubmit="return validateForm()" method="GET">
+                <div class="booking-form " id="ticket-area">
+                    <h4>Booking Flights</h4>
+    
+                    <!-- flying from selection area -->
+                 <label for="" class="mt-1 ticket-form">Flying From </label>
+                 <div class="mt-1" >
+                    <select name="flyingFrom" class=" inputs form-control" id="id_flying_from">
+                         <option value="DAC">DAC - Dhaka</option>
+                         <option value="AMD">AMD - Ahmedabad</option> 
+                         <option value="AOR">AOR - Alor Setar</option> 
+                         <option value="ATQ">ATQ - Amritsar</option> 
+                         <option value="AVV">AVV - Melbourne - Avalon</option> 
+                         <option value="BLR">BLR - Bengaluru</option> 
+                         <option value="BNE">BNE - Brisbane</option> 
+                         <option value="BOM">BOM - Mumbai</option>
+                         <option value="CCU">CCU - Kolkata</option>
+                         <option value="CGK">CGK - Jakarta</option>
+                         <option value="CMB">CMB - Colombo</option>
+                         <option value="COK">COK - Kochi</option> 
+                         <option value="DEL">DEL - New Delhi</option>
+                         <option value="HKG">HKG - Hong Kong</option>
+                         <option value="HND">HND - Tokyo - Haneda</option> 
+                         <option value="HNL">HNL - Honolulu</option> 
+                         <option value="HYD">HYD - Hyderabad</option> 
+                         <option value="ICN">ICN - Seoul - Incheon</option>
+                         <option value="IDR">IDR - Indore</option> 
+                         <option value="KUL">KUL - Kuala Lumpur</option>
+                        
+                    </select>
+                </div>
+                   
+                    <!-- flying destination selection area -->
+                <label for="" class="mt-2 ticket-form">Flying to </label>
+                <div class="mt-1"> 
+                    <select name=" flyingTo" class="inputs form-control" id="id_flying_from">
+                        <option value="CCU">CCU - Kolkata</option>
+                        <option value="CGK">CGK - Jakarta</option>
+                        <option value="CMB">CMB - Colombo</option>
+                        <option value="COK">COK - Kochi</option> 
+                        <option value="DEL">DEL - New Delhi</option>
+                        <option value="HKG">HKG - Hong Kong</option>
+                        <option value="HND">HND - Tokyo - Haneda</option> 
+                        <option value="HNL">HNL - Honolulu</option> 
+                        <option value="HYD">HYD - Hyderabad</option> 
+                        <option value="ICN">ICN - Seoul - Incheon</option>
+                        <option value="IDR">IDR - Indore</option> 
+                        <option value="KUL">KUL - Kuala Lumpur</option>
+                        <option value="AMD">AMD - Ahmedabad</option> 
+                        <option value="AOR">AOR - Alor Setar</option> 
+                        <option value="ATQ">ATQ - Amritsar</option> 
+                        <option value="AVV">AVV - Melbourne - Avalon</option> 
+                        <option value="BLR">BLR - Bengaluru</option> 
+                        <option value="BNE">BNE - Brisbane</option> 
+                        <option value="BOM">BOM - Mumbai</option>
+                    </select>
+               </div>
+           
+                    <div class="inputs">
+                        <div class="input-group">
+                            <label for="" class="ticket-form">Departure</label>
+                            <input class="inp-style" type="date" name="departure">
+                        </div>
+                        <div class="input-group">
+                            <label for="" class="ticket-form">Return</label>
+                            <input class="inp-style" type="date" name="return">
+                        </div>
+                    </div>
+        
+                    <!--------firstClass ticket section start-------->
+                    <div class=" input-group f-class">
+                        <div>
+                            <label for="" class="ticket-form">First Class ($150)</label>
+                            <input id="firstClassPrice" class="inp-style inp-width" type="number" name="firstClassTicket" value="0" required>
+                        </div>
+                        <div class="plus-minus-btn"> 
+                            <button onclick="totalPrice(false, 'firstClass')" type="button" class="btn btn-danger"> - </button>
+                            <button onclick="totalPrice(true, 'firstClass')" type="button" class="btn btn-primary" > + </button>
+                        </div>
+                    </div>
+                    <!--------firstClass ticket section end-------->
+        
+                    <!--------economyClass ticket section start-------->
+                    <div class="input-group f-class">
+                        <div>
+                            <label for="" class="ticket-form">Economy Class ($100)</label>
+                            <input id="economyClassPrice"  class="inp-style inp-width" type="number" name="economyClassTicket" value="0" required>
+                        </div>
+                        <div class="plus-minus-btn">
+                            <button onclick="totalPrice(false, 'economyClass')" type="button" class="btn btn-danger"> - </button>
+                            <button onclick="totalPrice(true, 'economyClass')" type="button" class="btn btn-primary"> + </button> 
+                        </div>
+                    </div>
+                    <!--------economyClass ticket section end-------->
+        
+        
+                    <!--------subtotal and total value section start-------->
+                    <div class="calculations">
+                        <div class="amount">
+                            <div class="left">
+                                <p class="ticket-form">Subtotal</p>
+                            </div>
+                            <div class="right">
+                                <p class="ticket-form">$ <span id="sub-total">000</span> </p>
+                            </div>
+                        </div>
+        
+                        <div class="amount">
+                            <div class="left">
+                                <p class="ticket-form">Charge 10% VAT</p>
+                            </div>
+                            <div class="right">
+                                <p class="ticket-form">$<span id="tax">00</span></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <div class="left">
+                                <h5>Total</h5>
+                            </div>
+                            <div class="right">
+                                <p class="ticket-form">$ <span id="total-price">000</span></p>
+                            </div>
+                        </div>
+                    </div>
+                     <!--------subtotal and total value section end-------->
+                    <button class="btn-style"  >Book Now</button>
+                </div>
+            </form>
         </div>
+
+       
     </section>
 
 
