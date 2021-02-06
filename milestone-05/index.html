@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon -->
+   
+    <title>Hungry Monster</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet bootstrap css link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <a class="navbar-brand" href="#"><img src="images/log.png" class="img-fluid w-50" alt="logo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon glyphicon glyphicon-align-justify mb-5"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- ml-auto still works just fine-->
+                        <ul class="navbar-nav ms-auto ">
+                            <li class="nav-item active">
+                                <a class="nav-link text-dark px-4 active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark px-4 " href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark px-4 " href="#">Recipes</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-dark px-4 " href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+     <section id="subscribe">
+            <div  class="container " >
+                <div class="row justify-content-center">
+                    <div class="col-md-5 col-lg-6">
+                        <div class="custom-button text-center">
+                            <div class="d-flex input-group-lg">
+                                <input id="input-food" type="email" class="form-control" placeholder="input email address..." required>
+                                <span><button  class="subscribe-button" onclick="getRequireFood()">Search</button></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <section>
+        <div class="container">
+            <div id="food-list">
+    
+            </div>
+        </div>
+    </section>
+       
+   
+  
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
+<!---------------------------------Thank You------------------------------------->

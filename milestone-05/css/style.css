@@ -1,0 +1,44 @@
+
+
+#food-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.food-name{
+    border: 2px solid yellow;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.food-name img{
+    width: 250px;
+}
+
+
+#subscribe {
+    background-color: #fabe6e;
+    padding: 100px 0;
+}
+.custom-button{
+    text-align: center;
+   
+    
+}
+
+.custom-button p{
+    font-weight: 700;
+}
+.subscribe-icon{
+    width: 50px;
+}
+.subscribe-button{
+   border: 0;
+   margin: 0 0 0 10px;
+   border-radius: 5px;
+   padding: 10px 25px;
+   background-color:   #000855;
+   color: white;
+}
+  
