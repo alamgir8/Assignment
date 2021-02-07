@@ -13,6 +13,7 @@
         .then(data => displayFood(data));
 
         document.getElementById('input-food').value = '';
+        document.getElementById('food-list').innerHTML = '';
 
 
         }
@@ -20,7 +21,7 @@
 
 /*==========================function for display search recipe=======================*/
     const displayFood = food =>{
-    
+        console.log(food);
         const foodList = document.getElementById('food-list');
         food.meals.forEach(food => {
             const foodItemDiv = document.createElement('div');
@@ -68,7 +69,10 @@
         ${food.strMeasure6} ${food.strIngredient6}<br>
         ${food.strMeasure7} ${food.strIngredient7}<br>
         ${food.strMeasure8} ${food.strIngredient8}<br>
-        ${food.strMeasure9} ${food.strIngredient9}
+        ${food.strMeasure9} ${food.strIngredient9}<br>
+        ${food.strMeasure10} ${food.strIngredient10}<br>
+        ${food.strMeasure11} ${food.strIngredient11}<br>
+        ${food.strMeasure12} ${food.strIngredient12}
         `
     }
 
