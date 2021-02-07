@@ -1,4 +1,4 @@
-
+/*====function for getRequire food ========*/
     function getRequireFood() {
         let inputFoodName = document.getElementById('input-food').value;
         if (inputFoodName == '') {
@@ -77,7 +77,7 @@
     }
 
 
-    /*===function for jump up===*/
+    /*===function for jump to top===*/
     function jumpBottom(from, id) {
         var to = document.getElementById(id);
         document.body.scrollTop = to.offsetTop - $(window).height() + to.offsetHeight;

@@ -37,24 +37,9 @@ body{
     justify-content: inherit;
 }
 
-#subscribe {
-    
-    padding: 50px 0;
-    
-}
-.custom-button{
-    text-align: center;
-   
-    
-}
 
-.custom-button p{
-    font-weight: 700;
-}
-.subscribe-icon{
-    width: 50px;
-}
-.subscribe-button{
+
+.search-button{
    border: 0;
    margin: 0 0 0 10px;
    border-radius: 5px;
