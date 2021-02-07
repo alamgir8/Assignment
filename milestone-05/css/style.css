@@ -2,24 +2,37 @@
 
 #food-list{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
 }
 
 .food-name{
-    border: 2px solid yellow;
-    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-radius: 10px;
     text-align: center;
 }
 
-.food-name img{
-    width: 250px;
+#food-image img{
+    width: 300px;
+    border-radius: 10px;
 }
 
+#food-details{
+    
+    margin: 10px;
+}
+.food-name img{
+    width: 250px;
+    
+    border-radius: 10px;
+   
+}
 
 #subscribe {
-    background-color: #fabe6e;
-    padding: 100px 0;
+    
+    padding: 50px 0;
+    
 }
 .custom-button{
     text-align: center;
@@ -40,6 +53,9 @@
    padding: 10px 25px;
    background-color:   #000855;
    color: white;
+}
+input[type='text']{
+    background-color:lightgrey;
 }
   
 span{

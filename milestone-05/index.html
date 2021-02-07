@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- icon -->
-   
+    <link rel="icon" href="images/icon.jfif" type="image/png" sizes="16x16">
     <title>Hungry Monster</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,7 +23,7 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <div class="d-flex align-items-center justify-content-between">
-                        <a class="navbar-brand" href="#"><img src="images/log.png" class="img-fluid w-50" alt="logo"></a>
+                        <a class="navbar-brand" href="#"><img src="images/icon.jfif" class="img-fluid w-25" alt="logo"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon glyphicon glyphicon-align-justify mb-5"></span>
                         </button>
@@ -55,7 +55,7 @@
                     <div class="col-md-5 col-lg-6">
                         <div class="custom-button text-center">
                             <div class="d-flex input-group-lg">
-                                <input id="input-food" type="email" class="form-control" placeholder="input email address..." required>
+                                <input id="input-food" type="text" class="form-control" placeholder="input email address..." required>
                                 <span><button  class="subscribe-button" onclick="getRequireFood()">Search</button></span>
                             </div>
                         </div>
@@ -68,6 +68,14 @@
 
     <section>
         <div class="container">
+            <div class="row mt-5 mb-5 d-flex justify-content-around">
+              <div id="food-image" class="col-sm-4 ">
+                
+              </div>
+              <div id="food-details" class="col-sm-4">
+               
+              </div>
+            </div>
             <div id="food-list">
     
             </div>
