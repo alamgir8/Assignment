@@ -4,13 +4,20 @@
 /*==============function for getRequire food ========*/
     function getRequireFood() {
         let inputFoodName = document.getElementById('input-food').value;
+        console.log(inputFoodName);
 
         if (inputFoodName == '') {
-            alert('please inter valid recipe items name');
+            alert("Please inter a recipe name");
             return;
         }
 
-        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f&s=${inputFoodName}`)
+        if(!isNaN(inputFoodName)){
+            alert("Please Enter Only Characters");
+            return false;
+        }
+        const url = `https://www.themealdb.com/api/json/v1/1/search.php?f&s=${inputFoodName}`
+        console.log(url);
+        fetch(url)
         .then(response => response.json())
         .then(data => displayFood(data));
 
@@ -21,8 +28,9 @@
 
 /*==========================function for display search recipe=======================*/
     const displayFood = food =>{
+       
         const foodList = document.getElementById('food-list');
-        food.meals.forEach(food => {
+        food.meals.forEach(food => { 
                 const foodItemDiv = document.createElement('div');
 
                 foodItemDiv.className = 'food-name'
