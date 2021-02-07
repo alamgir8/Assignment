@@ -1,21 +1,21 @@
-/*======================function for getRequire food ================================*/
+
+
+
+/*==============function for getRequire food ========*/
     function getRequireFood() {
         let inputFoodName = document.getElementById('input-food').value;
+
         if (inputFoodName == '') {
             alert('please inter valid recipe items name');
             return;
         }
-        if (inputFoodName == 1) {
-            document.getElementById('food-list').style.display = inputFoodName;
-        }
+
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f&s=${inputFoodName}`)
         .then(response => response.json())
         .then(data => displayFood(data));
 
         document.getElementById('input-food').value = '';
         document.getElementById('food-list').innerHTML = '';
-
-
         }
       
 
@@ -23,18 +23,18 @@
     const displayFood = food =>{
         const foodList = document.getElementById('food-list');
         food.meals.forEach(food => {
-            const foodItemDiv = document.createElement('div');
+                const foodItemDiv = document.createElement('div');
 
-            foodItemDiv.className = 'food-name'
-            const foodDescription = `
-            <span  onclick="displayFoodIngredient('${food.strMeal}')">
-             <span onclick="window.location.href='#search'">
-             <img  src=${food.strMealThumb}>
-            <h2>${food.strMeal}</h2></span>   
-            </span>
-            `
-            foodItemDiv.innerHTML = foodDescription;
-            foodList.appendChild(foodItemDiv);
+                foodItemDiv.className = 'food-name'
+                const foodDescription = `
+                <span  onclick="displayFoodIngredient('${food.strMeal}')">
+                <span onclick="window.location.href='#search'">
+                <img  src=${food.strMealThumb}>
+                <h2>${food.strMeal}</h2></span>   
+                </span>
+                `
+                foodItemDiv.innerHTML = foodDescription;
+                foodList.appendChild(foodItemDiv);
         })
     }
 
@@ -44,8 +44,6 @@
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f&s=${foodName}`)
         .then(res => res.json())
         .then(data => foodDetails(data.meals[0]))
-    
-
     }
 
 
