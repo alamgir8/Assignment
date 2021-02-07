@@ -1,4 +1,8 @@
-
+body{
+    margin: 0;
+    padding: 0;
+    
+}
 
 #food-list{
     display: grid;
@@ -14,19 +18,23 @@
 }
 
 #food-image img{
-    width: 300px;
+    width: 350px;
     border-radius: 10px;
 }
 
 #food-details{
-    
-    margin: 10px;
+    margin-left: 3%;
 }
 .food-name img{
     width: 250px;
     
     border-radius: 10px;
    
+}
+
+.item-with-details{
+    display: flex;
+    justify-content: inherit;
 }
 
 #subscribe {

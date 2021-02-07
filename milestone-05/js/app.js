@@ -28,8 +28,9 @@
             foodItemDiv.className = 'food-name'
             const foodDescription = `
             <span  onclick="displayFoodIngredient('${food.strMeal}')">
+            
                 
-            <img src=${food.strMealThumb}>
+            <img onclick="window.location.href='#search'" src=${food.strMealThumb}>
             <h2>${food.strMeal}</h2></span>
             `
             foodItemDiv.innerHTML = foodDescription;
@@ -69,4 +70,11 @@
         ${food.strMeasure8} ${food.strIngredient8}<br>
         ${food.strMeasure9} ${food.strIngredient9}
         `
+    }
+
+
+    /*===function for jump up===*/
+    function jumpBottom(from, id) {
+        var to = document.getElementById(id);
+        document.body.scrollTop = to.offsetTop - $(window).height() + to.offsetHeight;
     }
