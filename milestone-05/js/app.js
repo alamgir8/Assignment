@@ -4,7 +4,6 @@
 /*==============function for getRequire food ========*/
     function getRequireFood() {
         let inputFoodName = document.getElementById('input-food').value;
-        console.log(inputFoodName);
 
         if (inputFoodName == '') {
             alert("Please inter a recipe name");
