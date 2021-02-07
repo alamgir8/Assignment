@@ -14,9 +14,8 @@
             alert("Please Enter Only Characters");
             return false;
         }
-        const url = `https://www.themealdb.com/api/json/v1/1/search.php?f&s=${inputFoodName}`
-        console.log(url);
-        fetch(url)
+      
+        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f&s=${inputFoodName}`)
         .then(response => response.json())
         .then(data => displayFood(data));
 
@@ -45,6 +44,8 @@
         })
     }
 
+    
+
 /*==========================function for display recipe ingredient=======================*/
     const displayFoodIngredient = foodName =>{
 
@@ -52,6 +53,7 @@
         .then(res => res.json())
         .then(data => foodDetails(data.meals[0]))
     }
+
 
 
 /*==========================function for display recipe details information=======================*/    
