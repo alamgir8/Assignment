@@ -1,4 +1,4 @@
-/*====function for getRequire food ========*/
+/*======================function for getRequire food ================================*/
     function getRequireFood() {
         let inputFoodName = document.getElementById('input-food').value;
         if (inputFoodName == '') {
@@ -21,7 +21,6 @@
 
 /*==========================function for display search recipe=======================*/
     const displayFood = food =>{
-        console.log(food);
         const foodList = document.getElementById('food-list');
         food.meals.forEach(food => {
             const foodItemDiv = document.createElement('div');
@@ -29,10 +28,10 @@
             foodItemDiv.className = 'food-name'
             const foodDescription = `
             <span  onclick="displayFoodIngredient('${food.strMeal}')">
-            
-                
-            <img onclick="window.location.href='#search'" src=${food.strMealThumb}>
-            <h2>${food.strMeal}</h2></span>
+             <span onclick="window.location.href='#search'">
+             <img  src=${food.strMealThumb}>
+            <h2>${food.strMeal}</h2></span>   
+            </span>
             `
             foodItemDiv.innerHTML = foodDescription;
             foodList.appendChild(foodItemDiv);
@@ -69,15 +68,12 @@
         ${food.strMeasure6} ${food.strIngredient6}<br>
         ${food.strMeasure7} ${food.strIngredient7}<br>
         ${food.strMeasure8} ${food.strIngredient8}<br>
-        ${food.strMeasure9} ${food.strIngredient9}<br>
-        ${food.strMeasure10} ${food.strIngredient10}<br>
-        ${food.strMeasure11} ${food.strIngredient11}<br>
-        ${food.strMeasure12} ${food.strIngredient12}
+        ${food.strMeasure9} ${food.strIngredient9}
+        
         `
     }
 
-
-    /*===function for jump to top===*/
+/*==============================function for jump to top===============================*/
     function jumpBottom(from, id) {
         var to = document.getElementById(id);
         document.body.scrollTop = to.offsetTop - $(window).height() + to.offsetHeight;
