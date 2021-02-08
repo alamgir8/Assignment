@@ -25,7 +25,7 @@
         document.getElementById('food-list').innerHTML = '';
         }
       
-
+       
 /*==========================function for display search recipe=======================*/
     const displayFood = food =>{
        
@@ -87,3 +87,6 @@
         var to = document.getElementById(id);
         document.body.scrollTop = to.offsetTop - $(window).height() + to.offsetHeight;
     }
+
+
+
