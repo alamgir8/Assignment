@@ -17,8 +17,10 @@
       
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f&s=${inputFoodName}`)
         .then(response => response.json())
-        .then(data => displayFood(data));
-
+        .then(data => displayFood(data))
+        .catch(error => document.getElementById('search-error').innerHTML = "This doesn't seem right &#128533;, Try again with valid or listed recipe name &#128522;")
+        
+        document.getElementById('search-error').innerHTML = '';
         document.getElementById('input-food').value = '';
         document.getElementById('food-list').innerHTML = '';
         }
