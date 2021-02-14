@@ -70,3 +70,17 @@ img {
     width: 90%;
   }
 }
+
+.first-section{
+  min-height: 500px;
+  background: url('/img/bg-2.jpg') no-repeat;
+  background-position: cover;
+  background-size: cover;
+  z-index: -1;
+ 
+}
+
+#search:focus, #search-btn:focus, #duration:focus, #create-slider:focus{
+  outline: none;
+  box-shadow: none;
+}
