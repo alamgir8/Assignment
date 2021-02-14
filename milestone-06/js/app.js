@@ -21,7 +21,7 @@ const showImages = (images) => {
   galleryHeader.style.display = 'flex';
   images.forEach(image => {
     let div = document.createElement('div');
-    div.className = 'col-lg-4 col-md-6 col-xs-6 my-3 img-col mx-4';
+    div.className = 'col-lg-3 col-md-5 col-xs-5 my-3 img-col mx-4';
     div.innerHTML = ` <img class="img-fluid rounded shadow-sm" onclick=selectItem(event,"${image.webformatURL}") src="${image.webformatURL}" alt="${image.tags}"><div class = 'mt-2 mx-3'>
     <span><h6 ><i style="font-size:24px" class="fa">&#xf06e;</i> ${image.views}</h6>  <h6 class='mt-5'><i style="font-size:24px" class="fas fa-heart"></i> ${image.favorites}</h6> <h6 class='mt-5'><i style="font-size:24px" class="fa">&#xf019;</i> ${image.downloads}</h6></span></div>`;
     gallery.appendChild(div)
@@ -155,9 +155,9 @@ input.addEventListener("keyup", function(event) {
 const displayLoadingSpinner = (show) =>{
   const loadingSpinner = document.getElementById('spinner');
   if (show) {
-    loadingSpinner.classList.remove('d-lg-none' && 'd-md-none' && 'd-sm-none');
+    loadingSpinner.classList.remove('d-lg-none' && 'd-md-none' && 'd-sm-none' && 'd-none');
   }
   else{
-    loadingSpinner.classList.add('d-lg-none' && 'd-md-none'&& 'd-sm-none');
+    loadingSpinner.classList.add('d-lg-none' && 'd-md-none'&& 'd-sm-none' && 'd-none');
   }
 }
