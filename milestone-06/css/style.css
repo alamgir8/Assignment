@@ -33,6 +33,25 @@ h1, h2, h3, h4, h5, h6{
   display: flex;
 }
 
+.item-info{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: auto;
+  padding: 20px;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.item-info span{
+  font-size: 12px;
+  color: #fff;
+  padding: 6px;
+}
+.img-col:hover .item-info{
+  opacity: 1;
+  transition: all 0.3s ease-in;
+}
 .img-col img{
   padding: 5px;
   background: #ffffff;

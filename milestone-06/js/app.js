@@ -21,9 +21,9 @@ const showImages = (images) => {
   galleryHeader.style.display = 'flex';
   images.forEach(image => {
     let div = document.createElement('div');
-    div.className = 'col-lg-3 col-md-5 col-xs-5 my-3 img-col mx-4';
-    div.innerHTML = ` <img class="img-fluid rounded shadow-sm" onclick=selectItem(event,"${image.webformatURL}") src="${image.webformatURL}" alt="${image.tags}"><div class = 'mt-2 mx-3'>
-    <span><h6 ><i style="font-size:24px" class="fa">&#xf06e;</i> ${image.views}</h6>  <h6 class='mt-5'><i style="font-size:24px" class="fas fa-heart"></i> ${image.favorites}</h6> <h6 class='mt-5'><i style="font-size:24px" class="fa">&#xf019;</i> ${image.downloads}</h6></span></div>`;
+    div.className = 'col-lg-3 col-md-5 col-xs-5 my-3 img-col';
+    div.innerHTML = `<img class="img-fluid rounded shadow-sm" onclick=selectItem(event,"${image.webformatURL}") src="${image.webformatURL}" alt="${image.tags}"><div class = 'item-info'>
+    <span><i class="far fa-eye"></i> ${image.views}</span>  <span><i class="far fa-heart"></i> ${image.favorites}</span> <span><i class="fas fa-arrow-down"></i> ${image.downloads}</span></div>`;
     gallery.appendChild(div)
     displayLoadingSpinner(false);
   
