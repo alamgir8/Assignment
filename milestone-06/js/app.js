@@ -21,7 +21,7 @@ const showImages = (images) => {
   galleryHeader.style.display = 'flex';
   images.forEach(image => {
     let div = document.createElement('div');
-    div.className = 'col-lg-3 col-md-4 col-xs-6 img-item mb-2';
+    div.className = 'col-lg-3 col-md-4 col-xs-6 img-item mb-2 ';
     div.innerHTML = ` <img class="img-fluid img-thumbnail" onclick=selectItem(event,"${image.webformatURL}") src="${image.webformatURL}" alt="${image.tags}">`;
     gallery.appendChild(div)
   })
@@ -36,6 +36,7 @@ const getImages = (query) => {
 }
 
 let slideIndex = 0;
+
 const selectItem = (event, img) => {
   let element = event.target;
   element.classList.toggle('added');
@@ -44,9 +45,10 @@ const selectItem = (event, img) => {
   if (item === -1) {
     sliders.push(img);
   }
+
    else {
+    sliders.splice(item, 1);
    
-    alert('Hey, Already added !')
   }
 }
 var timer
@@ -67,10 +69,14 @@ const createSlider = () => {
 
   sliderContainer.appendChild(prevNext)
   document.querySelector('.main').style.display = 'block';
-  // hide image aria
+  // hide image area
   imagesArea.style.display = 'none';
-      const duration = document.getElementById('duration').value  || 1000;
-  
+    let duration = document.getElementById('duration').value  || 1000;
+    //to make slider duration minimum one second if user input negative or less then one second value for better showing or experience
+    if (duration < 1000) {
+      duration = 1000;
+    }
+
   sliders.forEach(slide => {
     let item = document.createElement('div')
     item.className = "slider-item";
@@ -84,6 +90,7 @@ const createSlider = () => {
     slideIndex++;
     changeSlide(slideIndex);
   }, duration);
+  console.log(duration);
 }
 
 // change slider index 
@@ -124,13 +131,11 @@ sliderBtn.addEventListener('click', function () {
   createSlider()
 })
 
-//function for prevent negative or under one second slider show
-function buttonDisable() {
-    const duration = document.getElementById('duration');
-    if (duration.value < 1000) {
-      sliderBtn.disabled = true;
-    }
-    else {
-      sliderBtn.disabled = false;
-    }
-  }  
+//function for keyboard inter option
+let input = document.getElementById("search");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("search-btn").click();
+  }
+});
