@@ -5,12 +5,28 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 #sliders {
-  height: 400px;
+  height: 600px;
   width: 60%;
   overflow: hidden;
   margin: 0 auto;
   position: relative;
 }
+
+#row-gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-rows: repeat(0, 340px);
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+}
+.images-group {
+  background: #f5f5f5;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12);
+  border-radius: 10px;
+  text-align: center;
+}
+
+
 
 .gallery-header {
   display: none;
@@ -30,8 +46,8 @@ body{
 }
 
 img {
-  height: 400px;
   object-fit: cover;
+  height: 550px;
 }
 
 .prev-next {
@@ -72,15 +88,42 @@ img {
 }
 
 .first-section{
-  min-height: 500px;
-  background: url('/img/bg-2.jpg') no-repeat;
+  min-height: 400px;
+  background: url('/img/bg.jpg') no-repeat;
   background-position: cover;
   background-size: cover;
   z-index: -1;
  
 }
+p{
+  font-size: 18px;
+}
 
 #search:focus, #search-btn:focus, #duration:focus, #create-slider:focus{
   outline: none;
   box-shadow: none;
+}
+input[type=text] {
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+#search-btn{
+  font-size: 20px;
+  padding: .8rem;
+}
+
+.create-download button{
+  font-size: 16px;
+  padding-top: .5rem ;
+}
+.slider-area{
+  margin-top: 150px;
+}
+
+.nav-image img{
+  width: 50px;
+}
+header{
+  
+  background-color: rgb(53, 51, 51);
 }

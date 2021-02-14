@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>1000+ Stunning Free Background Images</title>
+  <title>Stunning Free Background Images</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,28 +20,79 @@
 </head>
 
 <body>
-  <div class="container">
-      <h2 class="mt-2 text-center">Search Image for create slider</h2>
-         <div class="form-inline mt-3 d-flex justify-content-center">
-             <div class="input-group col-md-6 mb-2">
-                 <input type="text" class="form-control" id="search" placeholder="search for images....">
-              </div>
-              <button type="button" id="search-btn" class="btn btn-primary mb-2" onclick="getImages()">Search</button>
+  <header>
+    <div class="main-menu">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a class="navbar-brand nav-image" href="#"><img src="img/favicon.png" class="img-fluid " alt="logo"></a>
+                   
+                </div>
+                <div >
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white px-4 active" href="#">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white px-4 " href="#">Licence</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white px-4 " href="#">Upload</a>
+                      
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-----------------header section end---------------------->
+
+  <section class="first-section">
+    <div class="container">
+      <div class=" text-center align-items-center pt-5 ">
+        <h1 >Search Image for create slider</h1>
+        <p>Over 1 million + high quality stock images shared by our talented community.</p>
+      </div>
+       <div class="form-inline mt-3 d-flex justify-content-center">
+          <div class="input-group col-md-6 mb-2">
+             <input type="text" class="form-control " id="search" placeholder="search for images....">
           </div>
+          <button type="button" id="search-btn" class="btn btn-primary mb-2" onclick="getImages()">Search</button>
+       </div>
+      <div class="slider-area">
+        <div class="justify-content-center align-items-end mt-3 gallery-header ">
+          <h3 class="head-title text-center">Select image for slider</h3>
+          <div class="input-group col-md-3 mb-2 mb-md-0">
+             <input  class="form-control" id="duration" placeholder="slider change duration(minimum one second)" >
+          </div>
+          <button id="create-slider" class="btn btn-primary create-download button " type="submit">Create slider</button>
+       </div>
+      </div>
+    </div>
+ </section>
+  <!-- section for loading spinner --> 
+ <div id="spinner" class="d-flex justify-content-center d-lg-none d-md-none d-sm-none" >
+  <div class="spinner-border text-success" style="width: 5rem; height: 5rem;" role="status">
+    <span class="visually-hidden"></span>
+    
+  </div>
+  Loading...
+ </div>
+     
+      
       <!-- section for image --> 
-    <section class="images">
-        <div class="justify-content-around align-items-center mt-3 gallery-header mb-2">
-            <h3 class="head-title text-center">Select image for create slider</h3>
-        <div class="input-group col-md-3 mb-2 mb-md-0">
-            <input class="form-control" id="duration" placeholder="slider change duration(minimum one second)" >
+    <div class="second-section" >
+      <section class="container mt-3">
+        <div class="images">
+        <!-- slider images will show here -->
+        <div class="row gallery">
+          
+        <!-- search's images will show here -->
         </div>
-            <button id="create-slider" class="btn btn-primary px-5" type="submit">Create slider</button>
-      </div>
-      <div class="row gallery">
-
-      </div>
+        
+        </div>
     </section>
-
+    </div>
     
     <!-- slider -->
     <div class="main">

@@ -21,19 +21,27 @@ const showImages = (images) => {
   galleryHeader.style.display = 'flex';
   images.forEach(image => {
     let div = document.createElement('div');
-    div.className = 'col-lg-3 col-md-4 col-xs-6 img-item mb-2 ';
+    div.className = 'col-lg-3 col-md-4 col-xs-6 img-item mb-2 images-group';
     div.innerHTML = ` <img class="img-fluid img-thumbnail" onclick=selectItem(event,"${image.webformatURL}") src="${image.webformatURL}" alt="${image.tags}">`;
     gallery.appendChild(div)
+    displayLoadingSpinner(false);
+  
   })
 
 }
 
 const getImages = (query) => {
+  displayLoadingSpinner(true);
   fetch(`https://pixabay.com/api/?key=${KEY}=${query}&image_type=photo&pretty=true`)
     .then(response => response.json())
-    .then(data => showImages(data.hits))
+    .then(data => {
+      console.log(data.hits[0]);
+      showImages(data.hits)
+    })
     .catch(err => console.log(err))
 }
+
+
 
 let slideIndex = 0;
 
@@ -61,7 +69,7 @@ const createSlider = () => {
   // crate slider previous next area
   sliderContainer.innerHTML = '';
   const prevNext = document.createElement('div');
-  prevNext.className = "prev-next d-flex w-100 justify-content-between align-items-center";
+  prevNext.className = "prev-next d-flex w-100 justify-content-between align-items-center ";
   prevNext.innerHTML = ` 
   <span class="prev" onclick="changeItem(-1)"><i class="fas fa-chevron-left"></i></span>
   <span class="next" onclick="changeItem(1)"><i class="fas fa-chevron-right"></i></span>
@@ -79,7 +87,7 @@ const createSlider = () => {
 
   sliders.forEach(slide => {
     let item = document.createElement('div')
-    item.className = "slider-item";
+    item.className = "slider-item ";
     item.innerHTML = `<img class="w-100"
     src="${slide}"
     alt="">`;
@@ -90,7 +98,6 @@ const createSlider = () => {
     slideIndex++;
     changeSlide(slideIndex);
   }, duration);
-  console.log(duration);
 }
 
 // change slider index 
@@ -125,13 +132,15 @@ searchBtn.addEventListener('click', function () {
   const search = document.getElementById('search');
   getImages(search.value)
   sliders.length = 0;
+  
 })
 
 sliderBtn.addEventListener('click', function () {
   createSlider()
+  
 })
 
-//function for keyboard inter option
+//function for keyboard inter active option
 let input = document.getElementById("search");
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
@@ -139,3 +148,15 @@ input.addEventListener("keyup", function(event) {
    document.getElementById("search-btn").click();
   }
 });
+
+
+//function for display loading spinner
+const displayLoadingSpinner = (show) =>{
+  const loadingSpinner = document.getElementById('spinner');
+  if (show) {
+    loadingSpinner.classList.remove('d-lg-none' && 'd-md-none' && 'd-sm-none');
+  }
+  else{
+    loadingSpinner.classList.add('d-lg-none' && 'd-md-none'&& 'd-sm-none');
+  }
+}
