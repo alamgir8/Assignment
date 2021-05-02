@@ -1,0 +1,25 @@
+#navbar{
+    position: absolute;
+    z-index: 1;
+    width:100%;
+}
+#navbar img{
+    width: 100px;
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.login-button{
+    background-color: rgb(252, 34, 89);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px  9px 10px !important;
+    margin-top: 3px;
+}
+.login-button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(221, 0, 55);
+}
